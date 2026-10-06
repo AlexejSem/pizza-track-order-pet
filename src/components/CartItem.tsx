@@ -1,6 +1,6 @@
 import type { CartItem as CartItemType } from '../types';
-import { useCart } from '../context/CartContext';
-import { formatPrice } from '../utils/format';
+import { useCart } from '../context/cart-context';
+import { formatPrice } from '../utils/formats';
 
 export function CartItemRow({ item }: { item: CartItemType }) {
   const { changeQty, removeItem } = useCart();

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { useCart } from '../context/CartContext';
-import { formatPrice } from '../utils/format';
+import { useCart } from '../context/cart-context';
+import { formatPrice } from '../utils/formats';
 import { CartItemRow } from './CartItem';
 import { CartIcon } from './Icons';
 

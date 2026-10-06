@@ -1,6 +1,6 @@
 import type { HotDrink } from '../types';
-import { useCart } from '../context/CartContext';
-import { formatPrice } from '../utils/format';
+import { useCart } from '../context/cart-context';
+import { formatPrice } from '../utils/formats';
 import { CupIcon } from './Icons';
 
 export function HotDrinkCard({ drink }: { drink: HotDrink }) {

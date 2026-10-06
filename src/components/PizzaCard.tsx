@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import type { Pizza, PizzaSize } from '../types';
-import { useCart } from '../context/CartContext';
-import { formatPrice } from '../utils/format';
+import { useCart } from '../context/cart-context';
+import { formatPrice } from '../utils/formats';
 import { PizzaIcon } from './Icons';
 
 export function PizzaCard({ pizza }: { pizza: Pizza }) {

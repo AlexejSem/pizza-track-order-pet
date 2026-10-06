@@ -1,8 +1,8 @@
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import type { CartItem, CustomerInfo, Order, OrderStatus } from '../types';
 import { STATUS_INTERVAL_MS } from '../config';
-import { nextStatus } from '../utils/orderStatus';
-import { shortId } from '../utils/format';
+import { nextStatus } from '../utils/order-status';
+import { shortId } from '../utils/formats';
 
 const CART_KEY = 'pizza-pet:cart';
 const ORDERS_KEY = 'pizza-pet:orders';

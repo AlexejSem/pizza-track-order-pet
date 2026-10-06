@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import type { Order } from '../types';
-import { formatDate, formatPrice } from '../utils/format';
+import { formatDate, formatPrice } from '../utils/formats';
 import { StatusBadge } from './StatusBadge';
 
 export function OrderCard({ order }: { order: Order }) {

@@ -1,6 +1,6 @@
 import type { Drink } from '../types';
-import { useCart } from '../context/CartContext';
-import { formatPrice } from '../utils/format';
+import { useCart } from '../context/cart-context';
+import { formatPrice } from '../utils/formats';
 import { DrinkIcon } from './Icons';
 
 export function DrinkCard({ drink }: { drink: Drink }) {

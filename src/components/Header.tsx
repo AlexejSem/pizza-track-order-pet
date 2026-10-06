@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import { PizzaIcon, CartIcon } from './Icons';
-import { useCart } from '../context/CartContext';
+import { useCart } from '../context/cart-context';
 
 export function Header() {
   const { items } = useCart();
