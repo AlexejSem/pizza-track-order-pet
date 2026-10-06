@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { useCart } from '../context/CartContext';
-import { OrderCard } from '../components/OrderCard';
+import { useCart } from '../context/cart-context';
+import { OrderCard } from '../components/OrderCart';
 
 export function OrdersPage() {
   const { orders } = useCart();

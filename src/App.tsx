@@ -4,8 +4,13 @@ import { MenuPage } from './pages/MenuPage';
 import { CheckoutPage } from './pages/CheckoutPage';
 import { OrdersPage } from './pages/OrdersPage';
 import { OrderDetailPage } from './pages/OrderDetailPage';
+import { useLocation } from 'react-router-dom';
 
 export function App() {
+
+  const loc = useLocation();
+  console.log('ROUTER PATH:', loc.pathname);
+
   return (
     <div className="app">
       <Header />

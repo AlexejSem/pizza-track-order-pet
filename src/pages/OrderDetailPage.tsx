@@ -1,8 +1,8 @@
 import { Link, useParams } from 'react-router-dom';
-import { useCart } from '../context/CartContext';
-import { formatDate, formatPrice } from '../utils/format';
+import { useCart } from '../context/cart-context';
+import { formatDate, formatPrice } from '../utils/formats';
 import { StatusBadge } from '../components/StatusBadge';
-import { STATUS_FLOW, STATUS_LABEL } from '../utils/orderStatus';
+import { STATUS_FLOW, STATUS_LABEL } from '../utils/order-status';
 
 export function OrderDetailPage() {
   const { id } = useParams<{ id: string }>();
