@@ -7,7 +7,11 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "ts-check": "tsc --noEmit",
+    "test": "playwright test --headed",
+    "debug-test": "playwright test --ui",
+    "test-report": "playwright show-report"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -16,6 +20,8 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
