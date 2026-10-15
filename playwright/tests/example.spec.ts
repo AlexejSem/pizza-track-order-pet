@@ -1,7 +1,14 @@
 import { test, expect } from '@playwright/test';
+import { Pages } from '../pages';
 
-test('should load the home page', async ({ page }) => {
-  // This will navigate to http://localhost:5173/
-  await page.goto('/'); 
-  await expect(page).toHaveTitle(/Pizza Pet/i);
-});
+
+test.describe('Menu tests suite', () => {
+  test('should load the menu page', async ({ page }) => {
+    const pizzaOrder = new Pages(page);
+
+    await pizzaOrder.mainMenu.openPage();
+    await expect(page).toHaveTitle(/Pizza Pet/i);
+    await pizzaOrder.mainMenu.checkIfMenuLinkDisplayed();
+  });
+
+})
